@@ -120,7 +120,9 @@ education.display = function(){
   for (school in education.schools){
     $("#education").append(HTMLschoolStart);
     $(".education-entry:last").append(
-    HTMLschoolName.replace("%data%", education.schools[school].name)
+    HTMLschoolName
+    .replace("#", education.schools[school].url)
+    .replace("%data%", education.schools[school].name)
     +
     HTMLschoolDegree.replace("%data%", education.schools[school].degree));
     $(".education-entry:last").append(
@@ -140,12 +142,14 @@ education.display = function(){
     for (mooc in education.onlineCourses){
       $("#education").append(HTMLschoolStart);
       $(".education-entry:last").append(
-      HTMLonlineTitle.replace("%data%", education.onlineCourses[mooc].title) + HTMLonlineSchool.replace("%data%", education.onlineCourses[mooc].school)
+      HTMLonlineTitle
+      .replace("#", education.onlineCourses[mooc].url)
+      .replace("%data%", education.onlineCourses[mooc].title) + HTMLonlineSchool.replace("%data%", education.onlineCourses[mooc].school)
       );
       $(".education-entry:last").append(
       HTMLonlineDates.replace("%data%", education.onlineCourses[mooc].dates));
-      $(".education-entry:last").append(
-      HTMLonlineURL.replace("%data%", education.onlineCourses[mooc].url));
+      // $(".education-entry:last").append(
+      // HTMLonlineURL.replace("%data%", education.onlineCourses[mooc].url));
     };
   };
 };
