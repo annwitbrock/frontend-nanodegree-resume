@@ -213,3 +213,10 @@ span {
     display: block;
   }
 }
+
+#map-pin-content {
+  background-color: #F5AE23;
+  padding: 1em;
+  width: 200px;
+  height: 100px;
+}
