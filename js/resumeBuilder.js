@@ -11,7 +11,7 @@ var bio = {
     },
   "welcomeMessage":"A welcome message",
   "skills":["Coding", "Dancing"],
-  "bioPic": "images/fry.jpg",
+  "bioPic": "images/bwprofile.jpg",
   "display": function(){
     var formatRole = HTMLheaderRole.replace("%data%", bio.role);
     var formatName = HTMLheaderName.replace("%data%", bio.name);
