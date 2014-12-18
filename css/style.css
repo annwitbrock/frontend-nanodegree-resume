@@ -49,7 +49,6 @@ h2, h3, h4, h5 {
   padding-right: 5%;
 }
 
-
 .date-text {
   font-style: italic;
   font-size: 14px;
@@ -77,6 +76,11 @@ a {
   text-decoration: none;
   margin-top: 10px;
   display: block;
+}
+
+a:hover {
+  color: #1155A3;
+  text-decoration: underline;
 }
 
 .welcome-message {
@@ -128,6 +132,10 @@ a {
   padding: 10px;
 }
 
+#skills.flex-box {
+  flex-direction: column;
+}
+
 .center-content {
   padding-top: 2.5%;
   padding-left: 5%;
@@ -148,6 +156,10 @@ ul {
 
 img {
   padding: 10px;
+}
+
+.project-entry img{
+  width: 300px;
 }
 
 /* Bar chart stuff */
@@ -207,16 +219,16 @@ span {
   padding-bottom: 5%;
 }
 
-@media only screen and (min-width: 750px) {
-  #skillsH3,
-  .biopic {
-    display: block;
-  }
-}
-
 #map-pin-content {
   background-color: #F5AE23;
   padding: 1em;
   width: 200px;
   height: 100px;
+}
+
+@media only screen and (min-width: 750px) {
+  #skillsH3,
+  .biopic {
+    display: block;
+  }
 }
